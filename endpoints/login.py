@@ -6,7 +6,7 @@ import requests
 from env import BEARER, CLIENT_ID
 
 
-@app.post('/login')
+@app.post('/api/login')
 def user_login():
     print('app post reached')
 

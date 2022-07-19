@@ -6,7 +6,7 @@ from env import BEARER, CLIENT_ID
 
 headers = {'Authorization': BEARER, 'Client-Id': CLIENT_ID}
 
-@app.post('/bot')
+@app.post('/api/bot')
 def bot_post():
     print('bot post reached')
     

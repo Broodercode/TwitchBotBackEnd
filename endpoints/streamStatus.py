@@ -34,7 +34,7 @@ def stream_update():
     return 'update success'
 
 
-@app.patch('/stream-updates')
+@app.patch('/api/stream-updates')
 def stream_patch():
     print('stream end reached')
     data = request.json
