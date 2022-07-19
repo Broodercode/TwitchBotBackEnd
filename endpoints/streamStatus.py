@@ -27,6 +27,7 @@ def stream_update():
             run_query(
                 'INSERT INTO streams (started_at, stream_id, room_id, streamer_name) VALUES (?,?,?,?)', stream_data
             )
+            print('viewer_log query')
             run_query(
                 'INSERT INTO viewer_logs (logtime, viewer_count, stream_id) VALUES (?,?,?)', viewer_data)
 
